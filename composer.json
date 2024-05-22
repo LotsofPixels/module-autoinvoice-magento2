@@ -1,0 +1,21 @@
+{
+  "name": "lotsofpixels/module-autoinvoice-magento2",
+  "description": "Automatically invoice all complete orders in Magento",
+  "require": {
+    "php": "~8.1.0|~8.2.0|~8.3.0",
+    "magento/framework": "101.0.*|102.0.*|103.0.*",
+    "magento/module-sales": "101.0.*|102.0.*|103.0.*"
+  },
+  "type": "magento2-module",
+  "license": [
+    "OSL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Lotsofpixels\\AutoInvoicer\\": ""
+    }
+  }
+}

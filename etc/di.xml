@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Lotsofpixels\AutoInvoicer\Api\InvoiceProcessInterface"
+                type="Lotsofpixels\AutoInvoicer\Model\InvoiceProcess" />
+
+    <preference for="Lotsofpixels\AutoInvoicer\Api\Data\InvoiceProcessItemInterface"
+                type="Lotsofpixels\AutoInvoicer\Model\InvoiceProcessItem" />
+
+    <!-- Console commands -->
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ProcessCommand" xsi:type="object">Lotsofpixels\AutoInvoicer\Console\ProcessCommand</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>
