@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
-        <job name="lotsofpixels_autoinvoicer_process" instance="Aune\AutoInvoice\Cron\InvoiceProcess" method="execute">
+        <job name="lotsofpixels_autoinvoicer_process" instance="Lotsofpixels\AutoInvoicer\Cron\InvoiceProcess" method="execute">
             <config_path>sales/autoinvoicer/cron_schedule</config_path>
         </job>
     </group>

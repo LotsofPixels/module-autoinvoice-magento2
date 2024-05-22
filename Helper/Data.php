@@ -11,8 +11,8 @@ use Magento\Sales\Model\Order\Invoice;
 
 class Data
 {
-    public const XML_PATH_CRON_ENABLED = 'sales/autoinvoice/cron_active';
-    public const XML_PATH_PROCESSING_RULES = 'sales/autoinvoice/processing_rules';
+    public const XML_PATH_CRON_ENABLED = 'sales/autoinvoicer/cron_active';
+    public const XML_PATH_PROCESSING_RULES = 'sales/autoinvoicer/processing_rules';
     public const RULE_SOURCE_STATUS = 'src_status';
     public const RULE_DESTINATION_STATUS = 'dst_status';
     public const RULE_PAYMENT_METHOD = 'payment_method';

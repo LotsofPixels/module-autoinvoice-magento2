@@ -16,7 +16,7 @@ use Lotsofpixels\AutoInvoicer\Api\InvoiceProcessInterfaceFactory;
 
 class ProcessCommand extends Command
 {
-    public const COMMAND_NAME = 'aune:autoinvoice:process';
+    public const COMMAND_NAME = 'lotsofpixels:autoinvoicer:process';
     public const COMMAND_DESCRIPTION = 'Creates invoices according to configuration.';
     public const OPTION_DRY_RUN = 'dry-run';
 
